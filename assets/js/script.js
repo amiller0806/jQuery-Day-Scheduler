@@ -1,16 +1,31 @@
+
+
+
+
+
+const date = moment().format("MMM Do YYYY");         
+
+
+$('#currentDay').text(date);
+  
 $(".savePlan").on("click", function (e) {
   e.preventDefault();
-  var planToSave = $(this).parent().siblings(".col-7").children(".userentry").val();
-  var timeBlock = $(this).parent().siblings(".col-7").children(".userentry").attr("id");
-  console.log(planToSave, timeBlock);
+  var planToSave = $(this).parent().siblings(".col-7").children(".userEntry").val();
+  var timeBlock = $(this).parent().siblings(".col-7").children(".userEntry").attr("id");
   localStorage.setItem(timeBlock, planToSave);
+
 })
-for (var i = 9; i < 22; i++) {
-  var saveLocalStorage = localStorage.getItem(i);
-  $("#" + i).val(saveLocalStorage);
-}
+var now = moment().hours()
 
+  for (var i = 9; i < 22; i++) {
+    var saveLocalStorage = localStorage.getItem(i);
+    $("#" + i).val(saveLocalStorage);
+    if(i > now){
+      $("#"+i).addClass("future")
+    }else if( i === now){
+      $("#"+i).addClass("present")
+    }else{
+      $("#"+i).addClass("past")
+    }
+  }
 
-
-// https://teamtreehouse.com/community/how-do-i-use-a-loop-to-change-the-color-of-elements-within-a-variable 
-// INSPO:

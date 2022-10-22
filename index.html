@@ -18,14 +18,19 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <p id="currentTime" class="lead"></p>
+
     </header>
+    <!-- TIME BLOCK CLASS??? -->
     <div class="container">
       <!-- Timeblocks go here -->
-      <div class="container text-center">
+      <div id="schedule" class="container text-center">
         <div class="row">
           <div class="col-3">
+
             <h6>9 am</h6>
           </div>
+
           <div class="col-7">
             <textarea title="text" id="9" class="userentry" rows="2" cols="100"></textarea>
           </div>
@@ -50,7 +55,7 @@
             <h6>11 am</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="11" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="11" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan btn btn-primary">Save</button>
@@ -62,7 +67,7 @@
             <h6>12 pm</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="12" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="12" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan btn btn-primary">Save</button>
@@ -86,7 +91,7 @@
             <h6>2 pm</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="14" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="14" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan btn btn-primary">Save</button>
@@ -98,7 +103,7 @@
             <h6>3 pm</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="15" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="15" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan btn btn-primary">Save</button>
@@ -110,7 +115,7 @@
             <h6>4 pm</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="16" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="16" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan btn btn-primary">Save</button>
@@ -122,7 +127,7 @@
             <h6>5 pm</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="17" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="17" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan btn btn-primary">Save</button>
@@ -134,7 +139,7 @@
             <h6>6 pm</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="18" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="18" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan btn btn-primary">Save</button>
@@ -146,7 +151,7 @@
             <h6>7 pm</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="19" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="19" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan mt-2 pt-2 btn btn-primary">Save</button>
@@ -158,7 +163,7 @@
             <h6>8 pm</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="20" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="20" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan btn btn-primary">Save</button>
@@ -170,11 +175,12 @@
             <h6>9 pm</h6>
           </div>
           <div class="col-7">
-            <textarea title="text" id="21" class="userentry" rows="2" cols="100"></textarea>
+            <textarea title="text" id="21" class="userEntry" rows="2" cols="100"></textarea>
           </div>
           <div class="col-2">
             <button type="button" class="savePlan btn btn-primary">Save</button>
           </div>
+
         </div>
 
 
@@ -184,7 +190,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src = "./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 
 </html>
