@@ -4,6 +4,11 @@ body {
   line-height: 1;
 }
 
+.col-3 {
+  left: 5%;
+}
+
+
 textarea{
   background: transparent;
   border: none;
@@ -58,12 +63,18 @@ textarea{
   color: white;
 }
 
+.col-2 {
+  top: 30%;
+  right: 5%;
+}
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+ 
 }
 
 .saveBtn i:hover {
