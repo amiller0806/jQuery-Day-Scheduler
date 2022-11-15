@@ -34,7 +34,7 @@ THEN the saved events persist
 ![Screenshot of 12pm-9pm - shows past, present, & future times](assets/images/scheduler-02.jpg)
 
 ## URL to deployed application
-https://amiller0806.github.io/HTML-Advanced-CSS-Portfolio/ 
+https://amiller0806.github.io/jQuery-Day-Scheduler/o/ 
 
 ## Link to repository
 https://github.com/amiller0806/jQuery-Day-Scheduler 
